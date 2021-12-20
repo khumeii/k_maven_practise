@@ -37,8 +37,8 @@ public class K_Practice_Automation {
 	public void clickonSignInLink() {
 		
 		wait = new WebDriverWait(driver, 30);
-		wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Sign in")));
-		driver.findElement(By.linkText("Sig in")).click();
+		wait.until(ExpectedConditions.elementToBeClickable(By.className("login")));
+		driver.findElement(By.className("login")).click();
 
 	}
 	
